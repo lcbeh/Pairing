@@ -1,13 +1,8 @@
 class Integer
   def fizzbuzz  
-     if self % 15 == 0
-      "fizzbuzz"
-     elsif self % 5 == 0
-       "buzz"
-     elsif self % 3 == 0
-       "fizz"
-     else
-       self
-     end
+     return "fizzbuzz" if self % 15 == 0
+     return "buzz" if self % 5 == 0
+     return "fizz" if self % 3 == 0
+     self
   end
 end
